@@ -1,0 +1,12 @@
+tempo:
+  pattern: "Ключ запроса Часов Ключ проекта ч;"
+jira:
+  url:
+  userName:
+  password:
+logging:
+  level:
+    root: off
+spring:
+  main:
+    banner-mode: off
