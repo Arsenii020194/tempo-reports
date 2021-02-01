@@ -1,7 +1,7 @@
 # Info
 This project helps to load tempo reports by pattern from jira.
 # Build
-* set file pattern for report, your company jira url, username and password in application.yml
+* set file pattern for report, your company jira url(jira.yourcompany.yourdomain), username and password in application.yml
 * unix: ./gradlew  build
 * windows: gradlew.bat build
 # Usage
