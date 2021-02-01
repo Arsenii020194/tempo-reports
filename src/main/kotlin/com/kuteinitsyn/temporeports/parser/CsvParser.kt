@@ -13,6 +13,7 @@ class CsvParser {
 
     fun parse(file: InputStream): String {
         var parsedPattern = pattern
+        var result = ""
         csvReader().open(file) {
             readAllWithHeaderAsSequence().forEach { row: Map<String, String> ->
                 parsedPattern = pattern
@@ -21,9 +22,9 @@ class CsvParser {
                         parsedPattern = parsedPattern.replace(key, value)
                     }
                 }
-                println(parsedPattern)
+                result += "$parsedPattern\n"
             }
         }
-        return parsedPattern
+        return result
     }
 }
