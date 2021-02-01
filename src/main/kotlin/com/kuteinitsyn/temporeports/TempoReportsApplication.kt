@@ -45,8 +45,8 @@ class TempoReportsApplication(
             val tempoFile = File(filePath)
             if (!tempoFile.exists()) {
                 tempoFile.createNewFile()
-                tempoFile.writeText(tempoText)
             }
+            tempoFile.writeText(tempoText)
         } else {
             println(tempoText)
         }
